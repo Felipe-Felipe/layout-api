@@ -140,14 +140,38 @@ section > p {
 }
 }
 
-@media (max-width: 480px) {
-  header h2 {
-    margin-left: 0;
+@media (max-width: 800px) {
+  header
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header h1 {
+    /* margin-left: 0; */
+    width: 100%;
     font-size: 18px;
   }
-
+  header nav
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav input
+  {
+    margin: 0;
+  }
   nav input{
-    width: 160px;
+    width: 100%;
+    border: 1px solid white;
+    outline: 1px solid white;
+  }
+  nav button
+  {
+    width: 100%;
+    outline: 1px solid white;
   }
   img {
     width: 220px;
@@ -157,9 +181,25 @@ section > p {
     width: 160px;
     font-size: 13px;
   }
-
+  section
+  {
+    flex-grow: 1;
+  }
+  section h1
+  {
+    width: 100%;
+  }
   button {
     width: 45px;
     height: 45px;
+  }
+  main #resultado_img
+  {
+    width: 100%;
+  }
+  main #resultado_infos
+  {
+    width: 100%;
+    gap: 15px;
   }
 }
