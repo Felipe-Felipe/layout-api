@@ -33,7 +33,7 @@ async function pesquisar_eletrodomestico(termoBusca, pos) {
     resultadodapesquisa.innerHTML = `item: ${dados.products[pos].title}`;
     descricao.innerHTML = `marca: ${dados.products[pos].brand || "Sem Marca"}`;
     categoria.innerHTML = ` ${dados.products[pos].category}`;
-    preco.innerHTML = `R$: ${dados.products[pos].price}`;
+    preco.innerHTML = `US$: ${dados.products[pos].price}`;
     quantidade.innerHTML = `quantidade: ${dados.products[pos].availabilityStatus}`;
     imgresultado.src = dados.products[pos].images[0];
     max_itens = dados.products.length;
